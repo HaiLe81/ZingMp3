@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="250px" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Song</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="-4.54747351e-13" width="250" height="250"></rect>
+    </defs>
+    <g id="My-music" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Song" transform="translate(0.000000, 0.000000)">
+            <g id="Group-2">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#FFFFFF" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group9" transform="translate(62.000000, 74.000000)" stroke="#65509E" stroke-linecap="round" stroke-linejoin="round" stroke-width="7">
+                <path d="M108.178054,74.0165631 C108.178054,85.0222567 99.2562112,93.9440994 88.2505176,93.9440994 C77.244824,93.9440994 68.3229814,85.0222567 68.3229814,74.0165631 C68.3229814,63.0108696 77.244824,54.0890269 88.2505176,54.0890269 C99.2562112,54.0890269 108.178054,63.0108696 108.178054,74.0165631 Z" id="Stroke1"></path>
+                <path d="M39.8550725,82.5569358 C39.8550725,93.5626294 30.9332298,102.484472 19.9275362,102.484472 C8.92184265,102.484472 0,93.5626294 0,82.5569358 C0,71.5512422 8.92184265,62.6293996 19.9275362,62.6293996 C30.9332298,62.6293996 39.8550725,71.5512422 39.8550725,82.5569358 Z" id="Stroke3"></path>
+                <line x1="108.178054" y1="0" x2="108.178054" y2="71.1697723" id="Stroke5"></line>
+                <path d="M39.8550725,82.5569358 L39.8550725,27.0445135 C39.8550725,17.6501035 47.4360766,8.69979296 56.702381,7.1568323 L108.178054,0" id="Stroke7"></path>
+            </g>
+        </g>
+    </g>
+</svg>
