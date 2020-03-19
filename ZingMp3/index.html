@@ -1,11 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    
+    <script src="https://use.fontawesome.com/5302f89144.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    </style>
+    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/all.css">
     <title>ZingMp3</title>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="header-out">
+            <div class="header">
+                <div class="z-topmenu">
+                    <a href="#" class="logo"></a>
+                    <div class="searchbar">
+                        <form>
+                            <label>
+                                <i class="fa fa-search" aria-hidden="true" fa-lg></i>
+                                <div class="input-wrapper">
+                                    <input class="input-search" aria-controls="react-autowhatever-1"
+                                        placeholder="Nhập tên bài hát, ca sĩ hoặc mv…" type="text">
+                                </div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="account">
+                        <div class="avatar">
+                            <img src="./images//ava.jpg" alt="avatar">
+                        </div>
+                        <div class="info-account">
+                            <div class="name">
+                                <a href="#">Hải Lê</a>
+                            </div>
+                            <div class="level-account">
+                                <a href="#">Tài khoản thường</a>
+                            </div>
+                        </div>
+                        <i class="fas fas-down-active fa-angle-down" aria-hidden="true">
+                            <div class="dropdown-menu">
+                                <ul class="user-menu-list">
+                                    <li><a href="">
+                                            <i class="far far-left fa-user fa-1x"></i>
+                                            <span>Nhạc Cá Nhân</span>
+                                        </a></li>
+                                    <li><a href="">
+                                            <i class="fas far-left fa-sign-out-alt fa-1x"></i>
+                                            <span class="sp-logout">Đăng Xuất</span>
+                                        </a></li>
+                                    <li><a href="">
+                                            <i class="fas far-left fa-moon fa-1x"></i>
+                                            <span class="brightness">Nền tối</span>
+                                            <i class="fas far-right fa-toggle-off fa-1x"></i>
+                                            <!-- <i class="fas fa-toggle-on"></i> -->
+                                        </a></li>
+                                </ul>
+                                <div class="z-vip">
+                                    <div class="z-center">
+                                        <a href="#" class="btn-vip">Mua VIP Ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </i>
+
+                    </div>
+                </div>
+                <div class="f-topmenu">
+                    <ul class="nav-menu">
+                        <li class="h-menu"><a href="">
+                                TRANG CHỦ
+                            </a></li>
+                        <li class="h-menu zingchart">
+                            <a href="">#ZINGCHART</a>
+                            <div class="hover-zingchart">
+                                <div class="item">
+                                    <div class="title-group">REALTIME</div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Bài hát</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">MV</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">TUẦN</div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Bài hát</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">MV</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">US-UK</div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Bài hát</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">MV</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">K-POP</div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Bài hát</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">MV</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="h-menu"><a href="">MỚI PHÁT HÀNH</a></li>
+                        <li class="h-menu top100">
+                            <a href="">TOP 100</a>
+                            <div class="hover-top100">
+                                <div class="item">
+                                    <div class="title-group">
+                                        Việt Nam
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trẻ</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trữ Tình</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Quê Hương</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Cách Mạng</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rap/ Hip Hop Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rock Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Dance Việt</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        Âu Mỹ
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Pop</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rock</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rap / Hip Hop</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Country</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Electronic / Dance</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">R&B / Soul</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Audiophile</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        Châu Á
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Hàn Quốc</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhật Bản</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Hoa Ngữ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        Hoà Tấu
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Classical</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Piano</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Guitar</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Violin</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Cello</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Saxophone</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Cụ Khác</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="h-menu idea">
+                            <a href="">CHỦ ĐỀ</a>
+                            <div class="hover-idea">
+                                <div class="item">
+                                    <div class="title-group">
+                                        ĐỀ XUẤT
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Hot</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Những Bài Hít</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Việt Bất Hũ</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">K-Pop HIT</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Thuý Nga</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        THỂ LOẠI
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">EDM</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Acoustic</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Indie</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Không Lời</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Trữ Tình & Bolero</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        TÂM TRẠNG
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Những Ngày Mưa</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Tình Yêu</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Gia Điệu Buồn</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Âm Nhạc Thư Giãn</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Motivation</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        HOẠT ĐỘNG
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Tập Trung</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Spa - Yoga</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Cà Phê</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Weekend</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Party</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Du Lịch</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="h-menu mv">
+                            <a href="">MV</a>
+                            <div class="hover-mv">
+                                <div class="item">
+                                    <div class="title-group">
+                                        VIỆT NAM
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trẻ</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trữ Tình</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Dance Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rock Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rap/ Hip Hop Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trịnh</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Thiếu Nhi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        Âu Mỹ
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Pop</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rock</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rap / Hip Hop</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Country</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Electronic / Dance</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">R&B / Soul</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Audiophile</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        CHÂU Á
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Hàn Quốc</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhật Bản</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Hoá Ngữ</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Thái Lan</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        HOÀ TẤU
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Classical</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Piano</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Guitar</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Violin</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Cello</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Saxophone</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Cụ Dân Tộc</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="h-menu album">
+                            <a href="">ALBUM</a>
+                            <div class="hover-album">
+                                <div class="item">
+                                    <div class="title-group">
+                                        VIỆT NAM
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trẻ</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trữ Tình</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Dance Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rock Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rap/ Hip Hop Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trịnh</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Thiếu Nhi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        Âu Mỹ
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Pop</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rock</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rap / Hip Hop</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Country</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Electronic / Dance</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">R&B / Soul</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Audiophile</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        CHÂU Á
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Hàn Quốc</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhật Bản</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Hoá Ngữ</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Thái Lan</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title-group">
+                                        HOÀ TẤU
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Classical</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Piano</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Guitar</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Violin</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Cello</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Saxophone</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Cụ Dân Tộc</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="h-menu art">
+                            <a href="">NGHỆ SĨ</a>
+                            <div class="hover-art">
+                                <div class="item">
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trẻ</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trữ Tình</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Dance Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rock Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Rap/ Hip Hop Việt</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Trịnh</a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">Nhạc Thiếu Nhi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="h-menu person-music">
+                            <a href="">NHẠC CÁ NHÂN</a>
+                            <div class="hover-person-music">
+                                <div class="list-select">
+                                    <ul class="menu-list">
+                                        <li class="list-item">
+                                            <a href="#">
+                                                <div class="row-1">
+                                                    <img class="music" src="./images/thumbnail-song.svg" alt="">
+                                                    <div class="title">Bài Hát Yêu Thích</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">
+                                                <div class="row-1">
+                                                    <img class="music" src="./images/album_default.png" alt="">
+                                                    <div class="title">Hải</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">
+                                                <div class="row-1">
+                                                    <img class="music" src="./images/87b0cb44ffdf3c317630fca77fa2ba26.jpg" alt="">
+                                                    <div class="title">Tình Yêu</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">
+                                                <div class="row-1">
+                                                    <img class="music" src="./images/230932fdd1bca925c22c487a06359a5a.jpg" alt="">
+                                                    <div class="title">Hi</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#">
+                                                <div class="row-1">
+                                                    <img class="music" src="./images/649ac4e220c55858d7417ee1b7620680_1289276048.jpg" alt="">
+                                                    <div class="title">English</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="more-info">
+                                    <a class="more" href="">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="h-menu"><a href=""><i class="fab fa-vimeo-v"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">Main</div>
+        <div class="footer">Footer</div>
+    </div>
 </body>
+
 </html>
