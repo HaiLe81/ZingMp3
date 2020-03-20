@@ -237,6 +237,7 @@
     display: grid;
     grid-template-columns: 150px 150px 150px 150px;
     width: 600px;
+    z-index: 1;
 }
 .zingchart .title-group {
     font-size: 14px;
@@ -311,6 +312,7 @@
     visibility: hidden;
     background-color: #fcfcfc;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    z-index: 1;
 }
 
 .hover-top100 .item .title-group{
@@ -350,6 +352,7 @@
     visibility: hidden;
     background-color: #fcfcfc;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    z-index: 1;
 }
 
 .hover-idea .item .title-group {
@@ -388,6 +391,7 @@
     visibility: hidden;
     background-color: #fcfcfc;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    z-index: 1;
 }
 
 .hover-mv .item .title-group {
@@ -426,6 +430,7 @@
     visibility: hidden;
     background-color: #fcfcfc;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    z-index: 1;
 }
 
 .hover-album .item .title-group {
@@ -463,6 +468,7 @@
     background-color: #fcfcfc;
     font-family: 'Roboto', sans-serif;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    z-index: 1;
 }
 
 .hover-art .item .menu-list{
@@ -495,6 +501,7 @@
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
     display: grid;
     grid-template-rows: 85% 15%;
+    z-index: 1;
 }
 
 .hover-person-music .menu-list {
@@ -550,17 +557,15 @@
     visibility: visible;
 }
 
+/* slide-album */
 .main {
     width: 1026px;
     justify-content: center;
     position: relative;
 }
 
-/* .main .slideshow-container {
-    width: 100%;
-} */
 
-.hover-top {
+/* .hover-top {
     position: absolute;
     width: 1026px;
     height: 80px;
@@ -568,7 +573,7 @@
     background-color: none;
 }
 
-.hover-top .hidden {
+ .hover-top .hidden {
     position: inherit;
     top: 80px;
     width: 1026px;
@@ -590,10 +595,9 @@
     width: 50px;
     list-style-type: none;
     margin: 5px;
-    /* border: 1px solid black; */
-}
+} */
 
-.hover-top li img {
+/* .hover-top li img {
     height: 50px;
     width: 50px;
 }
@@ -601,7 +605,6 @@
 .main:hover .hidden{
     visibility: visible;
 }
-
 
 .main:hover .hover-top li:nth-child(1){
     transition: transform .2s ease-out;
@@ -626,4 +629,4 @@
 .main:hover .hover-top li:nth-child(5){
     transition: transform .2s ease-out .2s;
     transform: translateY(-75px);
-}
+} */
