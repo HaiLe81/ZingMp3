@@ -549,3 +549,81 @@
 .person-music:hover .hover-person-music {
     visibility: visible;
 }
+
+.main {
+    width: 1026px;
+    justify-content: center;
+    position: relative;
+}
+
+/* .main .slideshow-container {
+    width: 100%;
+} */
+
+.hover-top {
+    position: absolute;
+    width: 1026px;
+    height: 80px;
+    top: 260px;
+    background-color: none;
+}
+
+.hover-top .hidden {
+    position: inherit;
+    top: 80px;
+    width: 1026px;
+    height: 80px;
+    background-color: none;
+    visibility: hidden;
+}
+
+.hover-top ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.hover-top li {
+    height: 50px;
+    width: 50px;
+    list-style-type: none;
+    margin: 5px;
+    /* border: 1px solid black; */
+}
+
+.hover-top li img {
+    height: 50px;
+    width: 50px;
+}
+
+.main:hover .hidden{
+    visibility: visible;
+}
+
+
+.main:hover .hover-top li:nth-child(1){
+    transition: transform .2s ease-out;
+    transform: translateY(-75px);
+}
+
+.main:hover .hover-top li:nth-child(2){
+    transition: transform .2s ease-out 50ms;
+    transform: translateY(-75px);
+}
+
+.main:hover .hover-top li:nth-child(3){
+    transition: transform .2s ease-out .1s;
+    transform: translateY(-75px);
+}
+
+.main:hover .hover-top li:nth-child(4){
+    transition: transform .2s ease-out .15s;
+    transform: translateY(-75px);
+}
+
+.main:hover .hover-top li:nth-child(5){
+    transition: transform .2s ease-out .2s;
+    transform: translateY(-75px);
+}
