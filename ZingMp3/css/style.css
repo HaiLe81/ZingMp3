@@ -702,7 +702,6 @@
 	width: 190px;
 	height: 190px;
 	background-color: #ddd;
-	/* background-image: url('https://loremflickr.com/320/240'); */
 	background-size: cover;
 	background-position: center;
 	color: #fff;
@@ -712,152 +711,56 @@
 
 .album-square .overlay {
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+	/* background-color: rgba(0, 0, 0, 0.6); */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* opacity: 1; */
+	transition: all .7s;
+}
+.album-square .overlay img {
+	/* opacity: 0.6; */
+	width: 190px;
+	height: 190px;
+	position: relative;
+}
+.album-square .overlay {
+	/* opacity: 0.6; */
+	width: 190px;
+	height: 190px;
+	overflow: hidden;
+	position: relative;
+}
+.album-square .text{
+	position: absolute;
+	/* top: 0; */
+	width: 190px;
+	height: 190px;
+	background-color: rgba(0, 0, 0, 0.6);
 	opacity: 0;
-	transition: 0.5s, transform 0.5s;
+	z-index: 1;
+}
+.album-square .overlay i {
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	visibility: hidden;
+	z-index: 2;
 }
 
-.album-square:hover .overlay {
-	opacity: 0.6;
+.album-square:hover img{
+	transition: all .7s;
+	transform: scale(1.06);
 }
 
-.album-square:hover {
-	transition: 0.2s, transform .2s;
-	background-size: 9em;
+.album-square:hover i{
+	visibility: visible;
 }
 
-/* what listen today - background-image item */
-.today-what-listent .img-1 {
-	background-image: url(../images/today-1.jpg);
-}
-
-.today-what-listent .img-2 {
-	background-image: url(../images/today-2.jpg);
-}
-
-.today-what-listent .img-3 {
-	background-image: url(../images/today-3.jpg);
-}
-
-.today-what-listent .img-4 {
-	background-image: url(../images/today-4.jpg);
-}
-
-.today-what-listent .img-5 {
-	background-image: url(../images/today-5.jpg);
-}
-
-/* list near */
-
-.list-near .img-1 {
-	background-image: url(../images/l-1.jpg);
-}
-
-.list-near .img-2 {
-	background-image: url(../images/l-2.jpg);
-}
-
-.list-near .img-3 {
-	background-image: url(../images/lv-3.jpg);
-}
-
-.list-near .img-4 {
-	background-image: url(../images/l-4.jpg);
-}
-
-.list-near .img-5 {
-	background-image: url(../images/l-5.jpg);
-}
-
-/* Mix for you */
-
-.Mix-for-You .img-1 {
-	background-image: url(../images/m-1.jfif);
-}
-
-.Mix-for-You .img-2 {
-	background-image: url(../images/m-2.jfif);
-}
-
-.Mix-for-You .img-3 {
-	background-image: url(../images/m-3.jfif);
-}
-
-.Mix-for-You .img-4 {
-	background-image: url(../images/m-4.jfif);
-}
-
-.Mix-for-You .img-5 {
-	background-image: url(../images/m-5.jfif);
-}
-
-/* happy-international-day*/
-
-.happy-international-day .img-1 {
-	background-image: url(../images/h-1.jpg);
-}
-
-.happy-international-day .img-2 {
-	background-image: url(../images/h-2.jpg);
-}
-
-.happy-international-day .img-3 {
-	background-image: url(../images/h-3.jpg);
-}
-
-.happy-international-day .img-4 {
-	background-image: url(../images/h-4.jpg);
-}
-
-.happy-international-day .img-5 {
-	background-image: url(../images/h-5.jpg);
-}
-
-/* Melody*/
-
-.Melody .img-1 {
-	background-image: url(../images/me-1.jpg);
-}
-
-.Melody .img-2 {
-	background-image: url(../images/me-2.jpg);
-}
-
-.Melody .img-3 {
-	background-image: url(../images/me-3.jpg);
-}
-
-.Melody .img-4 {
-	background-image: url(../images/me-4.jpg);
-}
-
-.Melody .img-5 {
-	background-image: url(../images/me-5.jpg);
-}
-
-/* music-korea*/
-
-.music-korea .img-1 {
-	background-image: url(../images/k-1.jpg);
-}
-
-.music-korea .img-2 {
-	background-image: url(../images/k-2.jpg);
-}
-
-.music-korea .img-3 {
-	background-image: url(../images/k-3.jpg);
-}
-
-.music-korea .img-4 {
-	background-image: url(../images/k-4.jpg);
-}
-
-.music-korea .img-5 {
-	background-image: url(../images/k-5.jpg);
+.album-square:hover .text{
+	/* visibility: visible; */
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0.4;
 }
 
 .card-idea {
@@ -989,71 +892,6 @@
 
 .content-body-1 .row-2-2 .idea:hover {
 	color: #6e55b4;
-}
-
-/* Top 100 */
-.top100 .img-1 {
-	background-image: url(../images/t-1.jpg);
-}
-
-.top100 .img-2 {
-	background-image: url(../images/t-2.jpg);
-}
-
-.top100 .img-3 {
-	background-image: url(../images/t-3.jpg);
-}
-
-.top100 .img-4 {
-	background-image: url(../images/t4.jpg);
-}
-
-.top100 .img-5 {
-	background-image: url(../images/t-5.jpg);
-}
-
-/* Hip Hop vibe */
-
-.hiphop-vibe .img-1 {
-	background-image: url(../images/hp-1.jpg);
-}
-
-.hiphop-vibe .img-2 {
-	background-image: url(../images/hp-2.jpg);
-}
-
-.hiphop-vibe .img-3 {
-	background-image: url(../images/hp-4.jpg);
-}
-
-.hiphop-vibe .img-4 {
-	background-image: url(../images/hp-5.jpg);
-}
-
-.hiphop-vibe .img-5 {
-	background-image: url(../images/hp-3.jpg);
-}
-
-/* Top hits us-uk */
-
-.top-us-uk .img-1 {
-	background-image: url(../images/us-1.jpg);
-}
-
-.top-us-uk .img-2 {
-	background-image: url(../images/us-2.jpg);
-}
-
-.top-us-uk .img-3 {
-	background-image: url(../images/us-3.jpg);
-}
-
-.top-us-uk .img-4 {
-	background-image: url(../images/us-4.jpg);
-}
-
-.top-us-uk .img-5 {
-	background-image: url(../images/us-5.jpg);
 }
 
 .content-body-2 .item {
