@@ -1,7 +1,7 @@
 # ZingMp3
 # Design interface WebSite ZingMp3
 ## Hosting URL: 
-  [firebase serve](https://zingmp3-3aa84.web.app)
+  [ZingMp3](https://zingmp3-3aa84.web.app)
 ## project use: 
   [Slick](https://kenwheeler.github.io/slick/) 
 ## Deploy firebase:
