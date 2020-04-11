@@ -12,10 +12,10 @@
 ### Step 2: Initialize your project
           ```bash
           + firebase init
-          ```
           + select hosting (use space to choose and use Enter to next)
           + Select a Firebase project to connect to your local project directory.(in here,if you don't see project created in firebase,
           you can perform command(firebase logout) then (firebase login) and try again Step 2
+           ```
 ### Step 3: Write public then Enter
 ### Step 4: Choose N then Enter
 ### Step 5: Setup code
