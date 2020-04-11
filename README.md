@@ -2,10 +2,8 @@
 # Design interface WebSite ZingMp3
 ## Hosting URL: 
   [ZingMp3](https://zingmp3-3aa84.web.app)
-## project use: 
-  [Slick](https://kenwheeler.github.io/slick/) 
-## Deploy firebase:
-  [how to deploy in firebase](https://firebase.google.com/docs/hosting/quickstart?hl=vi)
+## project use: [Slick](https://kenwheeler.github.io/slick/) 
+## Deploy firebase: [how to deploy in firebase](https://firebase.google.com/docs/hosting/quickstart?hl=vi)
 ### Step 1: 
           + Install the Firebase CLI (npm install -g firebase-tools)
           + firebase login 
